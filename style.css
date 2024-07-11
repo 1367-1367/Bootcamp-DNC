@@ -1,0 +1,306 @@
+#principal{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #BABABA;
+}
+
+#principal div a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'inter';
+}
+
+    #principal div a:hover{
+        color: #BABABA;
+    }
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+}
+
+#menu{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 70px;
+}
+
+#principal button{
+    margin-right: 5%;
+    background-color: #0C70F2;
+    border: 0px;
+    height: 40px;
+    width: 80px;
+    font-family: 'inter';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 2px 4px 0px #0C70F240;
+    margin-top: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+header{
+    color: white;
+    font-family: 'inter';
+}
+
+header h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+header .invertido{
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+    /*Formulário*/
+
+form{
+    color: white;
+    font-family: 'inter';
+    font-size: 25px;
+    font-weight: 500;
+    width: 600px;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    border: 0px;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 17px;
+    padding-left: 13px;
+    background-color: rgba(255,255,255,0.9);;
+}
+
+form label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form::placeholder{
+    color: rgba(57, 57, 57,0.5);;
+}
+
+.checkbox-itens label{
+    font-size: 25px;
+
+}
+
+.checkbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"]{
+    transform: scale(2.0);
+}
+
+#area{
+    margin-top: 50px;
+}
+
+input[type="submit"]{
+    background-color: rgba(12, 112, 242, 0.9);
+    width: 600px;
+    color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(4, 40, 87, 0.815);
+    color: white;
+    transform: translateY(-7px);
+     box-shadow: 0px  15px 20px #121a1e5b;
+    transition-duration: 0.5s;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background-color: #0C70F2;
+    font-family: 'inter';
+    
+}
+   
+footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+
+
+footer h5{
+    text-align: center;
+    font-weight: 700;
+    background-color: #303030;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer ul li{
+    text-align: center;
+    font-weight: 600;
+    margin: 25px 0px 25px 0px;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: #BABABA;
+}
+
+footer .endereço{
+    font-size: 15px;
+    text-align: center; 
+}
+
+footer .linha2{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 28px;
+    padding: 10px;
+}
+
+footer .linha2 a{
+    font-family: 'inter';
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .linha2 a:first-child{
+    border-right: 3px solid white;
+    
+}
+
+
+footer .linha2 a:hover{
+    color: #BABABA;
+}
+
+@media only screen and (max-width:600px){
+
+    #principal{
+        flex-direction: column;
+        height: auto;
+        font-size: 41px;
+    }
+
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        text-align: justify;
+        margin: 0px;
+       
+    }
+
+    #principal button{
+        margin-left: 160px;
+        margin-bottom: 10px;
+    }
+
+    #menu a{
+        height: 28px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    form{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label{
+        font-size: 17px;
+    }
+
+    input[type="submit"]{
+        width: 100%;
+    }
+    
+    /* Footer */
+    
+    footer .linha1{
+        flex-direction: column;
+    }
+
+    footer .endereço{
+        margin-bottom: 25px;
+    }
+
+
+
+
+}
+
+
